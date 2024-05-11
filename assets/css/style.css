@@ -67,6 +67,7 @@ a:hover{
     color: #ffffff;
     padding: 0 1rem 0 1rem;
     border: 2px solid #EEF7FF;
+    border-radius: 0.4rem;
 }
 
 header ul{
@@ -126,7 +127,13 @@ nav p{
 }
 
 .btn:hover{
-    border: 1px #7AB2B2 solid;
+    font-family: "Oswald", sans-serif;
+    border: 1px #315664 solid;
+    height: 2.4rem;
+    width: 5.51rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-body{
