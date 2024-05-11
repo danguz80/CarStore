@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "Menu"
+    "Filtro"
+    "Main"
+    "Pie";
+    grid-template-columns: 1fr;
+    grid-template-rows: 
+    1fr
+    1fr
+    10fr
+    1fr;
+    height: 100vh;
+}
+
+  
+.titillium-web-bold {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.kanit-extralight {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.oswald{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}  
+
+header{
+    grid-area: Menu;
+}
+
+nav{
+    grid-area: Filtro;
+}
+
+main{
+    grid-area: Main;
+}
+
+footer{
+    grid-area: Pie;
+    background-color: #7AB2B2;
+    color: #EEF7FF;
+}
+
+a{
+    text-decoration: none;
+    color: #4D869C;
+}
+
+a:hover{
+    background-color: #7AB2B2;
+    color: #ffffff;
+    padding: 0 1rem 0 1rem;
+    border: 2px solid #EEF7FF;
+}
+
+header ul{
+    display: none;
+}
+
+.menu-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #CDE8E5;
+    color: #4D869C;
+    padding: 1rem;
+}
+
+.logo{
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.logo h1{
+    margin: 0;
+}
+
+.fa-bars{
+    font-size: 2rem;
+}
+
+.fa-car{
+    font-size: 2rem;
+}
+
+nav p{
+    margin: 0;
+    text-align: center;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.card{
+    height: 24rem;
+}
+
+.card-img-top{
+    height: 12rem;
+}
+
+.btn{
+    background-color: #7AB2B2;
+    color: #EEF7FF;
+}
+
+.btn:hover{
+    border: 1px #7AB2B2 solid;
+}
+
+.card-body{
+    color: #315664;
+    font-weight: 600;
+    background-color: rgb(251, 251, 251);
+}
+
+.pie-pagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.iconos{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 576px){
+    body{
+        grid-template-areas: 
+            "Menu Filtro"
+            "Menu Main"
+            "Pie Main";
+        grid-template-columns: 2fr 10fr;
+        grid-template-rows: 
+        1fr
+        10fr
+        1fr;
+        }
+    .fa-bars{
+        display: none;
+    }
+
+    .menu-list{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items:center;
+        padding-left: 1rem;
+    }
+    
+    header ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style:none ;    
+        padding-top: 8rem;
+        gap: 1rem;
+    }
+
+    .principal{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0.8rem;
+        margin: 1rem;
+        justify-items: center;
+    }
+
+    .pie-pagina{
+        margin-top: 0;
+    }
+
+    footer p{
+        text-align: center;
+    }
+}
